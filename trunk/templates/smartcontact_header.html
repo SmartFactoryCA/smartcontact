@@ -1,0 +1,18 @@
+<!-- Thank you for keeping this line in the template :-) //-->
+<!-- <{$ref_smartfactory}> //-->
+<!-- Thank you for keeping this line in the template :-) //-->
+
+<div class="smartcontact_headertable">
+	<{if $smartcontact_module_home}>
+		<span class="smartcontact_modulename"><{$smartcontact_module_home}></span>
+	<{/if}>
+	<{if $smartcontact_category_path}>
+		<span class="smartcontact_breadcrumb">
+		<{if $smartcontact_module_home}>
+			&gt;
+		<{/if}>
+	  	<{$smartcontact_category_path}></span>
+	<{/if}>
+</div>
+
+<div id="smartcontact_submit" style="clear: both;"><{if $smartcontact_showSubmitLink && $smartcontact_userCanSubmit}><a href="<{$smartcontact_url}>post.php?op=mod"><{$smarty.const._MI_IMBLOGGING_POST_ADD}></a><{/if}></div>
